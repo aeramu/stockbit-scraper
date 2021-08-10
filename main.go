@@ -59,9 +59,11 @@ func main() {
 }
 
 type ticker struct {
-	Ticker          string  `bson:"symbol"`
-	Revenue         []int64 `bson:"revenue"`
-	GrossProfit     []int64 `bson:"gross_profit"`
-	OperatingProfit []int64 `bson:"operating_profit"`
-	NetProfit       []int64 `bson:"net_profit"`
+	Ticker          string    `bson:"symbol"`
+	Revenue         []int64   `bson:"revenue"`
+	GrossProfit     []int64   `bson:"gross_profit"`
+	OperatingProfit []int64   `bson:"operating_profit"`
+	NetProfit       []int64   `bson:"net_profit"`
+	EPS             []float32 `bson:"eps"`
+	PER             []float32 `bson:"per"`
 }
